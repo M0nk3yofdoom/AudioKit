@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AKKeyboardDelegate 
         }
 
         for key in urlContents.components(separatedBy: NSCharacterSet.newlines) {
-            sporthDictionary[key] = URL(string: "\(baseURL)\(key)/\(key).sp")
+            sporthDictionary[key] = URL(string: "\(baseURL)recipes/\(key)/index.sp")
         }
 
         for item in sporthDictionary {
